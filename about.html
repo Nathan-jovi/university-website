@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!---------Header-->
+      <section class="sub-header">
+        <nav>
+            <a href="index1.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+      </section>   
+      <!-----------About Us content-->
+    <section class="about-us">
+        <div class="row">
+        <div class="about-col">
+        <h1>We are the largest university in the world</h1>
+        <p>We are proud to be the largest IT university in the world, offering unmatched resources, diverse programs, and a global community of innovators.</p>
+        <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+        <img src="images/about.jpg">
+        </div>
+        </div>
+    </section>
+      <!---------Footer-->
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>At our IT university, we are dedicated to fostering innovation, excellence, and global leadership in <br> technology education, empowering students to shape the future of the digital world.</p>
+        <div class="icons">
+            <i class="fa fa-facebook-official fa-2x"></i>
+            <i class="fa fa-twitter fa-2x"></i>
+            <i class="fa fa-instagram fa-2x"></i>
+            <i class="fa fa-linkedin fa-2x"></i>
+        </div>
+        <p>Made with  <i class="fa fa-heart"></i>  by our group </p>
+      </section>
+     <!--------JavaScript for toggle menu--> 
+      <script>
+         var navLinks = document.getElementById("navLinks");
+         function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+      </script>
+
+
+    </body>
+</html>
