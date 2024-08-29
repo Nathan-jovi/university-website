@@ -10,7 +10,7 @@ This project is about creating the website of the world's biggest university
 
 ## Installation
 
-Instructions on how to install the project:
+Instruction on how to install the project:
 
 
 git clone https://github.com/Nathan-jovi/university-website.git  
