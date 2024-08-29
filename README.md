@@ -25,7 +25,8 @@ node index1.html
 
  Guidelines for contributing:
 
-1-Fork the repository.
+1-Fork the repository.  
+
 2-Create a new branch (git checkout -b feature-branch).  
 
 3-Make your changes and commit (git commit -am 'Add new feature').  
