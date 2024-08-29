@@ -312,7 +312,7 @@ h3{
     padding: 18px 0;
 }
 .fa-heart{
-    color: red;
+    color: black;
 }
 /*---------About Us page-------*/
 .sub-header{
@@ -340,6 +340,7 @@ h3{
 }
 .about-col img{
     width: 100%;
+    border-radius: 10px;
 }
 .about-col h1{
     padding-top: 0%;
@@ -355,6 +356,7 @@ h3{
 .red-btn:hover{
     color: white;
 }
+/*-------Blog page---------*/
 .blog-content{
     width: 80%;
     margin: auto;
@@ -365,6 +367,7 @@ h3{
 }
 .blog-left img{
     width: 100%;
+    border-radius: 10px;
 }
 .blog-left h2{
     color: black;
@@ -381,9 +384,10 @@ h3{
 .blog-right h3{
     background: orangered;
     color: white;
-    padding: 7px 0;
+    padding: 10px 0;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    border-radius: 10px;
 }
 .blog-right div{
     display: flex;
