@@ -13,9 +13,12 @@ This project is about creating the website of the world's biggest university
 Instructions on how to install the project:
 
 
-git clone https://github.com/Nathan-jovi/university-website.git
-cd university-website
-npm install
+git clone https://github.com/Nathan-jovi/university-website.git  
+
+cd university-website  
+
+npm install  
+
 
 ## Usage
 
