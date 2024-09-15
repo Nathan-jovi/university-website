@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity IT University - 2024 Programs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .program-search {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .program-search input {
+            width: 70%;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .program-search button {
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .featured-program {
+            background-color: #fff3e0;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .blog-content {
+            position: relative;
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f44336;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+        }
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index1.html"><img src="images/logo.png" alt="University Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Available Certificates, Foreign Certifications, and Online Programs For 2024</h1>
+    </section>
+
+    <section class="blog-content">
+        <div class="program-search">
+            <input type="text" id="programSearch" placeholder="Search for programs...">
+            <button onclick="searchPrograms()">Search</button>
+        </div>
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="Certificates">
+                <h2>Our Certificates and Online Programs For 2024</h2>
+                <p>In 2024, our IT university is proud to offer a wide array of certificates and online programs designed to meet the evolving demands of the tech industry. Our programs are meticulously crafted to provide cutting-edge knowledge and practical skills that are immediately applicable in real-world scenarios.</p>
+                
+                <div class="featured-program">
+                    <h3>Featured Program: Advanced AI and Machine Learning</h3>
+                    <p>This comprehensive program covers the latest advancements in AI and ML, including deep learning, neural networks, and natural language processing. Led by industry experts, this program will prepare you for the future of technology.</p>
+                    <a href="#" class="hero-btn red-btn">Learn More</a>
+                </div>
+
+                <p>Our certificate programs cover a broad spectrum of IT disciplines, including cybersecurity, data science, cloud computing, AI, and software development. Each program is led by industry experts who bring a wealth of experience and insight, ensuring that you receive the most relevant and up-to-date education available.</p>
+                
+                <p>Our online format provides flexibility and convenience, allowing you to learn at your own pace, from anywhere in the world. We use state-of-the-art virtual learning environments that include interactive modules, live sessions, and collaborative projects, fostering an engaging and supportive learning experience.</p>
+                
+                <p>In addition to technical skills, our programs emphasize the development of critical thinking, problem-solving, and leadership abilities, preparing you not just for current industry challenges, but also for the future of technology. With our certificates and online programs, you will be equipped with the tools and credentials to excel in your career and make a meaningful impact in the IT world.</p>
+                
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form" onsubmit="return submitComment()">
+                        <input type="text" id="commenterName" placeholder="Enter Name" required>
+                        <input type="email" id="commenterEmail" placeholder="Enter Email" required>
+                        <textarea rows="5" id="commentText" placeholder="Your Comment" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Program Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>23</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Artificial Intelligence</span>
+                    <span>27</span>
+                </div>
+                <div>
+                    <span>Cloud Computing</span>
+                    <span>29</span>
+                </div>
+                <div>
+                    <span>Cybersecurity</span>
+                    <span>31</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>33</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-to-top" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>At Infinity IT University, we are dedicated to fostering innovation by encouraging African youth to strive for excellence and global leadership in technology education, empowering them to shape the future of the digital world.</p>
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> by our group</p>
+    </section>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        function searchPrograms() {
+            const searchTerm = document.getElementById('programSearch').value.toLowerCase();
+            const programs = document.querySelectorAll('.blog-right div');
+            programs.forEach(program => {
+                const text = program.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    program.style.display = 'flex';
+                } else {
+                    program.style.display = 'none';
+                }
+            });
+        }
+
+        function submitComment() {
+            const name = document.getElementById('commenterName').value;
+            const email = document.getElementById('commenterEmail').value;
+            const comment = document.getElementById('commentText').value;
+            
+            // Here you would typically send this data to a server
+            console.log(`New comment from ${name} (${email}): ${comment}`);
+            
+            alert('Thank you for your comment!');
+            return false; // Prevent form submission
+        }
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector('.scroll-to-top').style.display = "block";
+            } else {
+                document.querySelector('.scroll-to-top').style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+</html>
