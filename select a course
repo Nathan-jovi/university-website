@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Infinity ICT University - Courses</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <style>
+        .course-selection {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .course-selection h2 {
+            color: #f44336;
+        }
+        .course-selection form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .course-selection select, .course-selection button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .course-selection button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .course-selection button:hover {
+            background-color: #d32f2f;
+        }
+        #selectedCourses {
+            margin-top: 20px;
+        }
+    </style> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav> 
+            <a href="index1.html"><img src="images/logo.png" alt="University Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>   
+
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>A diverse range of courses designed to meet the academic and professional needs of students, from foundational subjects to specialized advanced studies.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>A focused intermediate program that bridges foundational learning with advanced studies, helping students develop critical skills and deeper subject knowledge.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>A comprehensive degree program designed to equip students with specialized knowledge, practical skills, and critical thinking abilities, preparing them for successful careers and advanced studies.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>An advanced post-graduation program focused on research, innovation, and professional development, preparing graduates for leadership roles and academic excellence in their chosen fields.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-selection">
+        <h2>Select Your Courses</h2>
+        <form id="courseForm">
+            <select id="courseSelect" multiple>
+                <option value="intro_programming">Introduction to Programming</option>
+                <option value="data_structures">Data Structures and Algorithms</option>
+                <option value="web_development">Web Development</option>
+                <option value="database_management">Database Management Systems</option>
+                <option value="ai_ml">Artificial Intelligence and Machine Learning</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="cloud_computing">Cloud Computing</option>
+                <option value="software_engineering">Software Engineering</option>
+            </select>
+            <button type="submit">Add Selected Courses</button>
+        </form>
+        <div id="selectedCourses"></div>
+    </section>
+
+    <section class="facilities">
+        <!-- ... (facilities section remains unchanged) ... -->
+    </section>
+
+    <section class="footer">
+        <!-- ... (footer section remains unchanged) ... -->
+    </section>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        // Course selection functionality
+        const courseForm = document.getElementById('courseForm');
+        const courseSelect = document.getElementById('courseSelect');
+        const selectedCoursesDiv = document.getElementById('selectedCourses');
+        const selectedCourses = new Set();
+
+        courseForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const selected = Array.from(courseSelect.selectedOptions);
+            selected.forEach(option => {
+                selectedCourses.add(option.text);
+            });
+            updateSelectedCourses();
+        });
+
+        function updateSelectedCourses() {
+            selectedCoursesDiv.innerHTML = '<h3>Your Selected Courses:</h3>';
+            if (selectedCourses.size === 0) {
+                selectedCoursesDiv.innerHTML += '<p>No courses selected yet.</p>';
+            } else {
+                const ul = document.createElement('ul');
+                selectedCourses.forEach(course => {
+                    const li = document.createElement('li');
+                    li.textContent = course;
+                    ul.appendChild(li);
+                });
+                selectedCoursesDiv.appendChild(ul);
+            }
+        }
+
+        updateSelectedCourses();
+    </script>
+</body>
+</html>

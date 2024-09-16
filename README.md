@@ -8,13 +8,14 @@ This project is about creating the website of the best american citadel of learn
 - [Usage](#usage)
 - [Contributing](#contributing)
 
-## Installation
+## Installations
 
-<<<<<<< HEAD
 Instruction on how to install the project:
-=======
-Guidelines on how to install the project:
->>>>>>> origin/main
+git-checkout-b-feature-branch
+Guideline on installing the project:
+Instruction on how to install the project:
+main 
+f7c37f3b113b203d8c2f2f2717f68ae62a2219af
 
 
 git clone https://github.com/Nathan-jovi/university-website.git  

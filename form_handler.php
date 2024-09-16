@@ -1,5 +1,5 @@
-<?php
-$name = $_POST['name'];
+<?php 
+$name = $_POST['name']; 
 $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
@@ -13,13 +13,13 @@ $email_body = "User Name: $name.\n".
                 "Subject: $subject.\n". 
                  "User Message: $message.\n";
 
-$to = 'tiozangnathanael@gmail.com';
+$to = 'tiozangnathanael@gmail.com'; 
 
-$headers = "From: $email_from\r\n";
+$headers = "From: $email_from\r\n"; 
 
 $headers .= "Reply-To: $visitor_email \r\n";
 
 mail($to,$email_subject,$email_body,$headers);
 
 header("Location: contact.html");
-?>
+?> 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity IT University - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="University Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>/* Home page /*
+                    <li><a href="about.html">ABOUT</a></li>/* about page */
+                    <li><a href="course.html">COURSES</a></li>/* course page */
+                    <li><a href="blog.html">BLOG</a></li>/* blog page */
+                    <li><a href="contact.html">CONTACT</a></li>/* contact page */
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About-Us</h1>
+    </header>/* end of header section*/
+/* main section begining */
+
+    <main>
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h2>We are the largest ICT university in Africa</h2>
+                    <p>At ICT IT University, we are proud to be the largest IT institution on the African continent. We offer unmatched resources, diversed programs, and a global community of innovators, dedicated to empowering African students to shape the future of the digital world.</p>
+                    <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpg" alt="University Campus">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>At Infinity ICT University, we are dedicated to fostering innovation by encouraging Africans youth to strive for excellence and global leadership in technology education, empowering them to shape the future of the digital world.</p>/* paragragh that talks on the university competence */
+        <div class="icons">/* foiter paragragh /*
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> by our group</p>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
