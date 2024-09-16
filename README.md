@@ -11,7 +11,7 @@ This project is about creating the website of the best american citadel of learn
 ## Installation
 
 git-checkout-b-feature-branch
-Guidelines on how to install the project:
+Guideline on how to install the project:
 Instruction on how to install the project:
 >>>>>main
 
