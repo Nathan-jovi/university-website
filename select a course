@@ -45,7 +45,7 @@
 </head>
 <body>
     <section class="sub-header">
-        <nav>
+        <nav> 
             <a href="index1.html"><img src="images/logo.png" alt="University Logo"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-window-close" onclick="hideMenu()"></i>
