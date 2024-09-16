@@ -26,7 +26,7 @@
             </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>About Us</h1>
+        <h1>About-Us</h1>
     </header>
 
     <main>
