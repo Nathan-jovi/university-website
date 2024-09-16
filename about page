@@ -18,7 +18,7 @@
                 <i class="fas fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>/* Home page /*
-                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>/* about page */
                     <li><a href="course.html">COURSES</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
