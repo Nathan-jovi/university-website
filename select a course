@@ -41,7 +41,7 @@
         #selectedCourses {
             margin-top: 20px;
         }
-    </style>
+    </style> 
 </head>
 <body>
     <section class="sub-header">
