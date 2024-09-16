@@ -1,6 +1,6 @@
-# World's biggest university website
+# Best American citadel of learning website
 
-This project is about creating the website of the world's biggest university 
+This project is about creating the website of the best american citadel of learning 
 
 ## Table of Contents
 
@@ -10,7 +10,11 @@ This project is about creating the website of the world's biggest university
 
 ## Installation
 
+<<<<<<< HEAD
 Instruction on how to install the project:
+=======
+Guidelines on how to install the project:
+>>>>>>> origin/main
 
 
 git clone https://github.com/Nathan-jovi/university-website.git  
