@@ -46,7 +46,7 @@
 
     <footer class="footer">
         <h4>About Us</h4>
-        <p>At Infinity ICT University, we are dedicated to fostering innovation by encouraging Africans youth to strive for excellence and global leadership in technology education, empowering them to shape the future of the digital world.</p>
+        <p>At Infinity ICT University, we are dedicated to fostering innovation by encouraging Africans youth to strive for excellence and global leadership in technology education, empowering them to shape the future of the digital world.</p>/* paragragh that talks on the university competence */
         <div class="icons">/* foiter paragragh /*
             <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
             <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
