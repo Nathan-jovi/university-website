@@ -8,7 +8,7 @@ This project is about creating the website of the best american citadel of learn
 - [Usage](#usage)
 - [Contributing](#contributing)
 
-## Installation
+## Installations
 
 git-checkout-b-feature-branch
 Guideline on how to install the project:
