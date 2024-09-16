@@ -53,7 +53,7 @@
                         <div class="col-sm-12">
                             <p>Qualification/Work Experience :</p>
                              <ul style="list-style: none;"> 
-                                <li><?php echo $result->QUALIFICATION_WORKEXPERIENCE ;?></li> 
+                                <li><?php echo $result->QUALIFICATIONS_WORKEXPERIENCE ;?></li> 
                             </ul> 
                         </div>
                         <div class="col-sm-12"> 
