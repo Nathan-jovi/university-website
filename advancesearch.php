@@ -12,7 +12,7 @@
  }
  .panel-body input {
  	font-size: 15px;
- }
+ }/* font size */
   .panel-body > .row {
   	margin-bottom:10px;
   }
