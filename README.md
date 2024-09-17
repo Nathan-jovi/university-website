@@ -1,4 +1,4 @@
-# Best American citadel of learning website
+# A University information website
 
 This project is about creating the website of the best american citadel of learning 
 
